@@ -1,0 +1,446 @@
+/* font-family: 'Comic Neue', cursive;
+font-family: 'Sacramento', cursive;
+font-family: 'Zen Loop', cursive; */
+
+
+
+:root {
+  background-color: var(--cor-destaque-aside);
+}
+
+
+* {
+    font-family: 'Comic Neue', cursive; 
+    --cor-destaque: rgb(157, 206, 247);
+    --cor-destaque-aside: rgb(213, 230, 245);
+    --cor-da-borda: black;
+}
+
+header {
+    width: 1120px;
+    top: -10px;
+    height: 50px;
+    text-align: center;
+    font-family: 'Zen Loop', cursive;
+    font-size: 50px;
+    background-color: var(--cor-destaque);
+    font-family: 'Sacramento', cursive;
+    position: relative;
+    padding: 8px;
+    
+}
+
+main {
+    margin-top: 20px;
+}
+
+
+aside { 
+    background-image: url("back-girassol2.webp");
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 290px; 
+    overflow: auto;
+    text-align: center;
+    padding: 10px;
+    margin: 0 50px 0 0;
+    background-color: var(--cor-destaque);
+    border: 2px solid var(--cor-da-borda);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    
+    
+  }
+
+  section {
+    margin: 0  0 10px 150px;
+    width: 900px;
+    height: fit-content;
+    border: 2px solid var(--cor-da-borda);
+    background-image: url("back-girassol2.webp");
+  }
+
+  article{ 
+    border: 2px solid var(--cor-da-borda);
+    padding: 15px;
+    margin: 10px;
+    background-color: var(--cor-destaque);
+
+    
+  }
+
+  #menu {  
+    background-color: var(--cor-destaque);
+    border: 2px solid var(--cor-da-borda);
+    margin-bottom: 20px;
+    
+  
+
+}
+
+
+nav {
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:15px 0;
+    list-style: none;
+
+}
+
+
+nav a {
+    margin: 0 5px;
+    padding: 3px;
+    border: 2px solid var(--cor-da-borda);
+    transition: background-color 0.5s, color 0.3s;
+    color: black;
+    font-weight: 700;
+
+}
+
+
+nav a:hover {
+    background-color: #000000;
+    color: var(--cor-destaque);
+  }
+
+a {
+    text-decoration: none;
+}
+
+  a:visited {
+    color: inherit;
+  }
+
+
+
+h2 {
+  font-size: 30px;
+  font-family: 'Sacramento', cursive;
+  margin: 10px;
+}
+
+
+#nam-text {
+text-align: end;
+}
+
+
+
+/* imagens/video */
+
+#img-mulher {
+     width: 200px;
+     outline: 8px double var(--cor-da-borda);
+     opacity : 0.1s;
+}
+
+
+#img-gandhi {
+    width: 500px;
+    height: 300px;
+    margin: 0;
+
+}
+
+
+
+figure {
+  text-align: center;
+  padding: 10px;
+
+}
+
+
+figcaption { 
+  text-align: center;
+  font-size: 15px;
+  margin: 20px 0;
+}
+
+.rotation {
+  transition: 0.5s;
+}
+
+.rotation:hover {
+  transform: rotateX(360deg);
+}
+
+
+iframe {
+  margin-left: 200px;
+  margin-bottom: 20px;
+}
+
+.black-white:hover {
+  opacity: 0.5;
+}
+/*----------------------------------------*/
+
+#desc-sobre {
+    font-size: 17px;
+    margin-top: 15px;
+    padding: 3px;
+    background-color: var(--cor-destaque);
+    outline: 2px solid black;
+    
+  }
+
+  #subtitulo {
+    background-color: var(--cor-destaque);
+    padding: 8px;
+    margin: 0;
+    width: 1120px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--cor-da-borda);
+    background-image: url("back-titulo.jpg");
+    font-weight: bold;
+    position: relative;
+    top: -10px;
+    z-index: -9999999;
+
+  }
+
+
+
+footer {
+  background-color: var(--cor-destaque);
+  width: 1120px;
+  text-align: center;
+  border-top: 2px solid var(--cor-da-borda);
+  bottom: -10px;
+  position: relative;
+  padding: 8px;
+
+}
+
+
+
+
+#bold-link li a {
+  font-weight: bold;
+}
+
+
+/* formulário */
+
+#botao {
+  border: 2px solid var(--cor-da-borda);
+  padding: 8px;
+  margin: 10px;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  font-size: 20px;
+  background-color: var(--cor-destaque);
+  transition: background-color 0.5s, color 0.3s;
+  color: #000000;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 5px;
+}
+
+#botao:visited {
+  text-decoration: none;
+}
+
+
+#botao:hover{
+  background-color: #000000;
+  color: var(--cor-destaque);
+} 
+
+.pulsar { transition: transform 0.5s;}
+
+
+.pulsar:hover {animation: pulso 1s infinite;}
+
+@keyframes pulso {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+.formulario {
+margin-bottom: 10px;
+height: auto;
+text-align: center;
+
+
+}
+
+
+label {display: inline-block;}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 80%;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #000000;
+}
+
+textarea {margin-left: 42px;}
+
+input[type="submit"] {
+  background-color: #000000;
+  color: var(--cor-destaque);
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  
+}
+
+input[type="submit"]:hover {
+  background-color: #00ffff;
+  color:#000000;
+}
+
+
+
+
+
+
+@media screen and (min-width: 750px) and (max-width:1300px) {
+
+  header,
+  #subtitulo,
+  footer
+  {
+    width: 100%;
+
+  }
+
+  #img-mulher{
+    display: none;
+  }
+
+  aside {
+    width: 100%;
+    display:flex ;
+    position: relative;
+    padding: 0;
+  }
+
+  #menu {
+    padding: 8px;
+    margin: 10px 0 0 0;
+  }
+
+    #desc-sobre {
+      margin: 10px;
+    }
+
+  section {
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+    
+}
+
+  #img-gandhi {
+    width: 100%;
+  }
+
+  video {
+    width: 100%;
+  }
+
+  #img-comp {
+    display: flex;
+    justify-content: space-around;
+    gap: 2px;
+  
+  }
+
+  #img-comp img {
+    min-width: 220px;
+   
+  } 
+
+  iframe {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+
+@media screen and (min-width: 250px) and (max-width:767px){
+
+  header,
+  #subtitulo,
+  footer
+  {
+    width: 100%;
+
+  }
+
+  #img-mulher{
+    display: none;
+  }
+
+  aside {
+    width: 100%;
+    display:flex ;
+    position: relative;
+    padding: 0;
+  }
+
+  #menu {
+    padding: 8px;
+  }
+
+  section {
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+
+
+}
+
+  #img-gandhi {
+    width: 100%;
+  }
+
+  #img-om {
+    width: 100%;
+  }
+
+  video {
+    width: 100%;
+  }
+
+ 
+  #img-comp img {
+    min-width: 100%;
+   
+  } 
+
+  iframe {
+    width: 100%;
+    margin: 0;
+  }
+
+}
+
+
+
+
+
+
+  
