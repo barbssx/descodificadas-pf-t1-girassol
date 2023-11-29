@@ -217,7 +217,8 @@ footer {
   bottom: -10px;
   position: relative;
   padding: 8px;
-
+  font-family: 'Sacramento', cursive;
+  font-size: 25px;
 }
 
 
@@ -257,9 +258,12 @@ footer {
 } 
 
 .pulsar { transition: transform 0.5s;}
-
-
 .pulsar:hover {animation: pulso 1s infinite;}
+
+
+.pulsar-coracao { 
+  transition: transform 0.5s;
+  animation: pulso 1s infinite;}
 
 @keyframes pulso {
     0% {
